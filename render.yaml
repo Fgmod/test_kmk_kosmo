@@ -3,5 +3,5 @@ services:
     name: kmk-kosmo
     runtime: python
     plan: free
-    buildCommand: pip install -r https://github.com/Fgmod/test_kmk_kosmo/edit/main/requirements.txt
+    buildCommand: pip install -r requirements.txt
     startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
